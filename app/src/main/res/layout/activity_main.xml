@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="match_parent"
+    android:background="#DFDFDF"
+    android:backgroundTint="#DADADA"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/main_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/News_fragment"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="News">
+
+        </Button>
+
+        <Button
+            android:id="@+id/feedback_fragment"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="Feedback">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_marginTop="40dp"
+        android:layout_width="410dp"
+        android:layout_height="680dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top_bar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="410dp"
+            android:layout_height="840dp"
+            android:background="#708EFA"
+            android:backgroundTint="#C1E7F8">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
